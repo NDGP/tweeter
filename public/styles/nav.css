@@ -1,0 +1,24 @@
+nav {
+height: 120px;
+width: auto;
+background-color: #4056A1;
+color: #ffffff ;
+padding: 1.5em;
+}
+
+nav .spaner{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  
+}
+
+/* Change the appearance of the nav based on the following rules. The navbar should:
+
+    Be 120 pixels in height
+    Be the full width of the viewport.
+    Have #4056A1 as its default background colour.
+    Have #FFFFF as its default font colour
+    The <span> within the <nav> has Bungee as it's default font-family
+    The inner content should not be touching the viewport edge on any side 
+    and should remain 1.5ems away from all edges */

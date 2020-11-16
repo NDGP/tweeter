@@ -15,11 +15,21 @@ html {
  */
 
 body {
+  font-family: 'Source Sans Pro', sans-serif;
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: #5ad44f;
+  height: auto;
+  width: auto;
   font-size: 24px;
 }
 
+.container{
+  margin: 0 auto;
+  
+  background-color: rgb(194, 194, 194);
+  height: 900px;
+  width: 90%;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

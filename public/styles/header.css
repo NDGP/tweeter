@@ -1,0 +1,19 @@
+header {
+  height: 400px;
+  width: auto;
+  background-color: #ffff00;
+  background-image: url("https://www.transparenttextures.com/patterns/ps-neutral.png");
+}
+
+.avitar{
+  display: flex;
+  justify-content: center;
+}
+
+.nameBar{
+margin: 0px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
