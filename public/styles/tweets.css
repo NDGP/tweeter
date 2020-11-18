@@ -1,0 +1,38 @@
+#tweets-section{
+  color: white;
+  border: 1px solid black;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: rgb(104, 194, 85);
+  display: flex;
+  justify-content: center;
+}
+
+article{
+  border: 2px solid black;
+  width: 98%;
+}
+
+.tweet-head{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.tweet-box{
+  display: flex;
+  border-bottom: 1px solid black;
+  margin: 10px;
+}
+.the-tweet{
+  display: flex;
+  font-weight: 600;
+  margin: 10px 0px;
+  
+}
+
+.tweet-footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px 10px 10px;
+}
+
