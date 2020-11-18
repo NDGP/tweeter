@@ -21,13 +21,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
-  
+
   <body class="body">
     <!-- Top nav bar (fixed) -->
     <nav>
       <span class="spaner" style="font-family: 'Bungee';">tweeter</span>
-        <span><script src="/composer-char-counter.js"></script></span> 
       <span><span class="bold-spaner"> write</span>
       <span> new tweet</span></span>
     </nav>
@@ -52,7 +53,7 @@
           <textarea class="text-box" name="text" id="tweet-text"></textarea>
           <div class="button-counter">
             <button class="tweet-button" action="/tweets" type="button">Tweet</button>
-            <output name="counter" for="tweet-text">140</output>
+            <output class="counter" name="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>

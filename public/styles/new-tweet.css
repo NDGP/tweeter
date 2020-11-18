@@ -50,6 +50,7 @@ form {
 .button-counter {
   margin: 10px;
   font-family: "Bungee";
+  color: #545149;
   display: flex;
   justify-content: space-between;
 }
