@@ -21,12 +21,13 @@ body {
   height: auto;
   width: auto;
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .container{
   margin: 0 auto;
-  
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(106, 0, 206);
   height: 900px;
   width: 90%;
 }

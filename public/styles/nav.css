@@ -1,16 +1,17 @@
 nav {
-height: 120px;
-width: auto;
-background-color: #4056A1;
-color: #ffffff ;
-padding: 1.5em;
+  display: flex;
+  height: 90px;
+  padding: 1.5em;
+  width: auto;
+  background-color: #003cff;
+  color: #ffffff ;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
 }
 
-nav .spaner{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  
+.bold-spaner{
+  font-weight: bold;
 }
 
 /* Change the appearance of the nav based on the following rules. The navbar should:
