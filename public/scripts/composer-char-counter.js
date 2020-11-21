@@ -10,10 +10,7 @@ $(document).ready(function() {
   }else{
     $counter.css("color", "#545149")
   }
-  
-   console.log(`key went down ${count} `)
-   console.log("this is tweetForm", $tweetForm)
-   console.log("this is counter", $counter);
+
  })
 });
 

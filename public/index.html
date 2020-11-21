@@ -50,11 +50,11 @@
 
       <section class="section-new-tweet">
         <h2 class="prompt-head">Compose Tweet</h2>
-        <form> 
+        <form id="tweet-form" method="post" action="/tweets"> 
           <label class="prompt" for="tweet-text">What are you humming about?</label>
           <textarea class="text-box" name="text" id="tweet-text"></textarea>
           <div class="button-counter">
-            <button class="tweet-button" action="/tweets" type="button">Tweet</button>
+            <button class="tweet-button" type="submit">Tweet</button>
             <output class="counter" name="counter" for="tweet-text">140</output>
           </div>
         </form>
@@ -63,7 +63,10 @@
           <article>
             <header>
               <div class="header-span">
+                <span class="avatar-name">
+                <img class="small-avatar" src="/images/profile-hex.png"> 
                 <span>name</span>
+                </span>
                 <span class="email-in-tweets">email</span>
               </div>
             </header>

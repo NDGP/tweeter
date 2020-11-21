@@ -6,6 +6,11 @@ justify-content: center;
 align-items: center;
 }
 
+#error-prompt p{
+  margin: 10px;
+  font-weight: bold;
+  color: red;
+}
 form {
   width: 100%;
   display: flex;
