@@ -15,3 +15,9 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## screen shots
+
+!["Screenshot of home page"](https://github.com/NDGP/tweeter/blob/master/docs/error%20handling.png)
+!["Screenshot of error handling"](https://github.com/NDGP/tweeter/blob/master/docs/home%20page.png)
+!["Screenshot of character counter changing to red when over 140"](https://github.com/NDGP/tweeter/blob/master/docs/text%20counter%20when%20over%20140%20%20count.png)
