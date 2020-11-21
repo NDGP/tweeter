@@ -1,10 +1,5 @@
 
-// /*
-//  * Client-side JS logic goes here
-//  * jQuery is already loaded
-//  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
-//  */
-// // Fake data taken from initial-tweets.json
+// tweet html filled by data from Data-files
 
 const createTweetElement = (tweetData) => {
   return `<article>
@@ -27,10 +22,12 @@ const createTweetElement = (tweetData) => {
 </article>`
 }
 
+// functions to render tweet, err message, and handle XSS
+
 const renderTweets = (tweets) => {
   let $tweet;
   for (let tweetData in tweets) {
-    $tweet = createTweetElement(tweets[tweetData])
+    $tweet = createTweetElement(tweets[tweetData]);
     $('#tweets-section').prepend($tweet);
   }
 }
@@ -39,13 +36,13 @@ const errorMsg = (message) => {
   $(".section-new-tweet").prepend(`<div id="error-prompt"><p>${message}</p></div>`);
 };
 
-const escape =  (str) => {
+const escape = (str) => {
   let div = document.createElement('div');
   div.appendChild(document.createTextNode(str));
   return div.innerHTML;
 }
 
-
+// when page has loaded 
 
 $(document).ready(() => {
 
@@ -58,26 +55,29 @@ $(document).ready(() => {
         renderTweets(tweets);
       },
       error: (error) => {
-        console.log(error)
+        console.log(error);
       }
     });
   };
 
-  const $tweetForm = $("#tweet-form")
+  const $tweetForm = $("#tweet-form");
+
+  // action after a submition of tweet is made and error handling if bad inputs 
+
 
   loadTweets()
   $tweetForm.on("submit", (event) => {
     event.preventDefault();
 
-  let tweetLength = $('#tweet-text').val().length
-    console.log($('#tweet-text').val().length)
+    let tweetLength = $('#tweet-text').val().length;
+    console.log($('#tweet-text').val().length);
 
     if (!tweetLength) {
-    errorMsg('nothing writen, please add text');
-    return;
+      errorMsg('nothing writen, please add text');
+      return;
     } else if (tweetLength > 140) {
-    errorMsg('Tweet must be 140 characters or less');
-    return;
+      errorMsg('Tweet must be 140 characters or less');
+      return;
     }
 
     $.ajax({
@@ -93,13 +93,6 @@ $(document).ready(() => {
     $('#error-prompt').remove();
   });
 
-  loadTweets()
+  loadTweets();
 
 });
-
-
-
-
-
-
-

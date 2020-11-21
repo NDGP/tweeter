@@ -1,6 +1,9 @@
 .header {
   margin-top: 90px;
   padding-top: 15px;
+  height: auto;
+  width: fit-content;
+  position: relative;
   height: 0px auto;
   width: 100%;
   color: #ffffff;
@@ -21,3 +24,10 @@ padding-bottom: 15px;
 font-size: 45px;
 }
 
+
+@media screen and (max-width: 1024px){
+  .header{
+    height: 0px auto;
+    width: 100%;
+  }
+}
